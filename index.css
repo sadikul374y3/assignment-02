@@ -126,8 +126,16 @@
 
 
 @media screen and (max-width: 576px) {
+   .mobail-nav{
+    padding: 0px 16px;
+   } 
+
     .nav-for-dextop{
         display: none;
+    }
+
+    .baner-left{
+        padding: 0px 16px;
     }
 
     .baner-section{
@@ -145,6 +153,7 @@
 
     .baner-right img{
         width: 392px;
+        margin-top: -60px;
     }
     
 }
@@ -219,9 +228,12 @@
 /* cart section responsive */
 
 @media screen and (max-width: 576px) {
+    .cart-section{
+        margin-top: 65px;
+    }
+    
     .cart-div{
         grid-template-columns: repeat(2, 1fr);
-        /* margin: 28px 15px; */
     }
 
     .cart-item{
@@ -241,5 +253,296 @@
         font-size: 16px;
         font-weight: 700;
     }
+
+    .Our-Plants-div p{
+        padding: 0px 28px;
+    }
     
 }
+
+
+
+/* badge section  */
+
+.badge-section{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: center;
+}
+
+.badge-left{
+    position: relative;
+}
+
+.flower-store-image{
+    width: 540px;
+    height: 597px;
+}
+
+.badge-image{
+    width: 286px;
+    height: 286px;
+    position: absolute;
+    top: -127px;
+    left: 350px;
+
+}
+
+.badge-right{
+    width: 530px;
+    height: 520px;
+    margin: auto ;
+}
+
+.badge-right h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #000000;
+    padding-right: 40px;
+    margin-bottom: 20px;
+}
+
+.badge-right ul{
+    margin-left: 30px;
+    display: grid;
+    row-gap: 20px;
+}
+
+.badge-right ul li{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+@media screen and (max-width: 576px) {
+    .badge-section{
+        flex-direction: column;
+        padding: 0px 15px;
+    }
+
+    .badge-image{
+        display: none;
+    }
+
+    .flower-store-image{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .badge-right{
+        width: 100%;
+    }
+
+    .badge-right h2{
+        padding-right: 0;
+    }
+}
+
+
+/* 2nd cart section  */
+.div-1{
+    margin: 121px 0px;
+    text-align: center;
+}
+
+.div-1 h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #E95A08;
+}
+
+.div-1 span{
+    color: #000000;
+}
+
+.div-1 p{
+    font-size: 22px;
+    width: 888px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+}
+
+.div-2{
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.footer-cart-1{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.secondcart-1{
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    background-image: url(./assets/deal-bloom.png);
+}
+
+
+.secondcart-2{
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('./assets/deal-ana.png');
+    
+}
+
+.secondcart-3{
+    border-radius: 14px;
+    background-image: url(./assets/deal-zabo.png);
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondcart-3 h2{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.second-cart-btn-1{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.cart-design{
+    width: 366.22px;
+    height: 206px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondcart-3{
+    width: 753px;
+    height: 423.13px;
+}
+
+.cart-design h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+
+.second-cart-btn{
+  border: none;
+  background: none;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.second-cart-btn-1 {
+  border: none;
+  background: none;
+  text-decoration: underline;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+
+/* bg image opacity */
+
+.secondcart-1,
+.secondcart-2,
+.secondcart-3 {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 366.22px;
+  height: 206px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.secondcart-1 {
+  --bg-image: url('./assets/deal-bloom.png');
+}
+
+.secondcart-2 {
+  --bg-image: url('./assets/deal-ana.png');
+}
+
+.secondcart-3 {
+  --bg-image: url('./assets/deal-zabo.png');
+  width: 753px;
+  height: 423.13px;
+}
+
+
+/* responsive second cart  */
+
+
+@media screen and (max-width:576px) {
+    .div-2{
+        flex-direction: column;
+        margin: 0px 16px;
+    }
+
+    .footer-cart-1{
+        flex-direction: column;
+    }
+
+    .div-1{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .div-1 h2{
+        font-size: 24px;
+    }
+
+    .div-1 p{
+        width: auto;
+        margin: 0px 16px;
+    }
+
+    .secondcart-3{
+        width: 366.22px;
+        height: 206px;
+        background-size: cover;
+        border-radius: 14px;
+        gap: 19px;
+    }
+
+    .cart-design{
+        border-radius: 14px;
+    }
+
+    .secondcart-3 h2{
+        font-size: 20px;
+    }
+
+  .second-cart-btn-1{
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+    
+}
+
+
+
